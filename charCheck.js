@@ -16,3 +16,9 @@ Initial]
 6. When you are finished, commit your changes and push them to your 
 repository. 
 */
+
+const readline = require('readline-sync'); // readline-sync module is required to get user input
+let input = readline.question("Please enter a word or phrase: "); // prompt user for input of Text
+let index = readline.question("Select a number between 0 and total # of input characters: "); // prompt user for input of index number
+let char = input[index]; // get the character at the index number
+console.log(`The character at index ${index} is: ${char}`); // print out the character at the index number
